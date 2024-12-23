@@ -25,8 +25,5 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Start
-      run: npm start
-      
     - name: Deploy to GitHub Page
       uses: actions/deploy-pages@v4
