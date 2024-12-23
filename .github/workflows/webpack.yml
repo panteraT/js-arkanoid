@@ -31,5 +31,8 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+        
     - name: Deploy to GitHub Page
       uses: actions/deploy-pages@v4
