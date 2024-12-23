@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+h1 {
+  margin: 0;
+  font-size: 4em;
+  font-family: "Gloria Hallelujah";
+  text-shadow: 1px 0 12px #dd00a6;
+}
+
+p, .notes {
+  margin: 0;
+  padding: 0;
+  color: #dd00a6;
+  font-size: 6vw;
+  font-family: "Gloria Hallelujah";
+  text-align: center;
+}
+
+.header .notes p {
+  color: #0095DD;
+}
+.header {
+  display: flex;
+}
+
+.text {
+  text-align: center;
+}
+
+canvas {
+  background: black;
+  border: 2px solid #dd00a6;
+  width: 80%;
+  height: 50%;
+}
+
+.settings{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.score, .level {
+  font-family: "Gloria Hallelujah";
+  color: #dd00a6;
+  font-size: 2em;
+}
+
+.picture {
+  height: 240px;
+  margin: 0 2vw;
+  align-self: flex-start;
+}
+
+.left-img {
+  background-image: url("../images/ViRender.png");
+}
+
+.right-img {
+  background-image: url("../images/acc6c7bb7b23dfd8416169976a043bd2.png");
+}
+
+img {
+  display: block;
+}
+
+@media screen and (max-width: 550px) {
+  canvas {
+    width: 98%;
+    height: 50%;
+  }
+  .score, .level {
+    font-size: 1.5em;
+  }
+  .picture {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  canvas {
+    width: 780px;
+    margin-bottom: 20px;
+  }
+  .notes p {
+    font-size: 3vw;
+  }
+}
